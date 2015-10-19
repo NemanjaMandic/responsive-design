@@ -16,4 +16,5 @@ header a.logo {
 }
 
 
-
+nav { top: 200px; }
+nav a { margin-right: 20px; }
