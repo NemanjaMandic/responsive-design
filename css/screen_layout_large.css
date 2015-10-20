@@ -23,6 +23,7 @@ nav {
 header {
 	height: 275px;
 	background: url(../images/banner_large.jpg) no-repeat right 0px;
+	background-size: 150px 85px;
 }
 
 header a.logo {
@@ -31,6 +32,7 @@ header a.logo {
 	top: 25px;
 	right: 30px;
 	background-image: url(../images/logo_large.png);
+	background-size: 150px 85px;
 }
 
 article { padding: 60px 20px 10px 20px; }
@@ -52,3 +54,23 @@ nav a { margin: 12px 0px 10px 20px; }
 @media screen and (max-width: 990px){
 	footer { padding-left: 20px; }
 }
+
+@media
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min--moz-device-pixel-ratio: 2),
+   only screen and (-o-min-device-pixel-ratio: 2/1),
+   only screen and (min-device-pixel-ratio: 2),
+   only screen and (min-resolution: 192dpi),
+   only screen and (min-resolution: 2dppx)
+    {
+		header {
+			
+			background-image: url(../images/banner_large_2x.jpg);
+              }
+
+		header a.logo {
+			
+			background-image: url(../images/logo_large_2x.png);
+			
+		}
+    }
